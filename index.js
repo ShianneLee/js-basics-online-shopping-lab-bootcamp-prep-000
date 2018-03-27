@@ -39,7 +39,7 @@ function viewCart() {
   }else if (cart.length > 2){
     var multiItems = itemsAndPrices.slice(0, -1).join(', ');
     var end = itemsAndPrices.slice(-1);
-    return(`${intro} ${beginning}, and ${end}.`)
+    return(`${intro} ${multiItems}, and ${end}.`)
   }
 }
 
